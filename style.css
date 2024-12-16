@@ -1,0 +1,150 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: '', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.user-reviews > p{
+    color: hsl(303, 10%, 53%);
+}
+
+.review-container{
+    margin: 3rem 0;
+    width: 95%;
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    margin: 0;
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: 800;
+    color: hsl(300, 43%, 22%);
+}
+
+h3{
+    color: hsl(300, 43%, 22%);
+    margin: 0.5rem 0;
+    font-weight: 700;
+}
+
+.stars-review{
+    width: 100%;
+}
+
+.popular-review{
+    margin-bottom: 1rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.5rem;
+    padding: 0.8rem 0;
+}
+
+.review-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.review-card{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+    color: white;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.profile-pic{
+    width: 40px;
+    border-radius: 40px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.user-info > p{
+    margin: 0;
+}
+
+.user-name{
+    font-weight: 600;
+}
+
+.verify-batch{
+    color: hsl(333, 80%, 67%);
+    font-weight: 600;
+}
+
+@media (min-width: 990px) {
+    body{
+        margin: 0;
+        height: 100vh;
+    }
+
+    .popular-review{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .review-container{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .user-reviews{
+        width: 40%;
+        text-align: left;
+    }
+
+    .stars-review{
+        width: 50%;
+    }
+
+    .stars-review > .popular-review:nth-child(2) {
+        margin-left: 4rem;
+    }
+    
+    .stars-review > .popular-review:nth-child(3) {
+        margin-left: 8rem;
+    }
+
+    .review-cards > .review-card:nth-child(2) {
+        margin-top: 2rem;
+    }
+
+    .review-cards > .review-card:nth-child(3) {
+        margin-top: 4rem;
+    }
+
+    .review-cards{
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+}
